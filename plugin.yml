@@ -1,0 +1,29 @@
+name: FrostWarn DE
+main: tm.info.felix.Warn
+version: 1.0
+
+commands:
+   warn:
+      description: Warne einen Spieler
+      usage: /warn [Spieler] [Grund]
+      permission: frostwarn.warn
+      permission-message: Keine Permissions!
+   warnings:
+      description: Schaue dir die Warnungen von dir ode eines Spielers an
+      usage: /warnings <Spieler>
+      permission: frostwarn.warnings
+      permission-message: Keine Permissions!
+   clearwarns:
+      description: Loesche die Warnungen eines Spielers
+      usage: /clearwarns [Spieler]
+      permission: frostwarn.clearwarns
+      permission-message: Keine Permissions!
+permissions:
+   frostwarn.warn:
+      default: op
+   frostwarn.warnings:
+      default: op
+   frostwarn.warnings.others:
+      default: op
+   frostwarn.clearwarns:
+      default: op
